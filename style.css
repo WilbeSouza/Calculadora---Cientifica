@@ -1,0 +1,129 @@
+/*------pagina------*/
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #1E90FF, #ffef78, #63c9b4);
+    display: flex;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+/*------corpo da calculadora------*/
+.calculator {
+    width: 1000px;
+    background-color: #333333;
+    padding: 50px 30px;
+    margin: auto;
+    margin-top: center;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 10px 15px rgba(0, 5, 24, 0.4);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.calculation {
+    grid-column: span 6;
+}
+
+.history {
+    grid-column: span 4;
+}
+.history{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#historyTitle {
+    color: white;
+    text-align: center;
+
+}
+
+/*------tela------*/
+.display input {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 35px;
+    background-color: #5b715d;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
+    color: black;
+    border-radius: 6px;
+}
+
+/*------botões ou teclas------*/
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.button {
+
+    font-size: 20px;
+    padding: 17px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.548), 3px -3px 5px rgba(102, 102, 102, 0.4), -3px 3px 6px rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.digit-button {
+    background-color: #333333;
+}
+
+.digit-button:hover {
+    background-color: #686868;
+}
+
+.operation-button {
+    background-color: #f69906;
+}
+
+.operation-button:hover {
+    background-color: #ff9d00a8;
+}
+
+#equal {
+    grid-row: span 2;
+    background-color: #155ee69a;
+}
+
+#equal:hover {
+    background-color: #0a48bb9a;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+.side-button {
+    background-color: #504036;
+}
+
+.side-button:hover {
+    background-color: #997a66a8;
+}
+.btn-sm{
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 5px;
+}
